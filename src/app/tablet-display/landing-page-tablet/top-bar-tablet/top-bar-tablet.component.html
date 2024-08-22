@@ -1,0 +1,18 @@
+<div nevy11Clearfix style="background-color: black; color: white">
+  <div nevy11My5 style="float: left" nevy11My [my]="2">LCP</div>
+
+  <div style="float: right">
+    <button
+      mat-icon-button
+      role="button"
+      aria-controls="content"
+      (click)="change()"
+    >
+      <mat-icon>menu</mat-icon>
+    </button>
+  </div>
+</div>
+
+<div *ngIf="show_settings">
+  <nevy11-top-settings-tablet></nevy11-top-settings-tablet>
+</div>

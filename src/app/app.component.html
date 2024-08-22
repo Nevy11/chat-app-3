@@ -1,0 +1,15 @@
+<!-- <router-outlet></router-outlet> -->
+
+<div *ngIf="isHandset$ | async">
+  <nevy11-phone-display></nevy11-phone-display>
+</div>
+<div *ngIf="isMedium$ | async">
+  <nevy11-medium></nevy11-medium>
+</div>
+<div *ngIf="isLarge$ | async">
+  <nevy11-large-display></nevy11-large-display>
+</div>
+
+<div *ngIf="isLargeBrave$ | async">
+  <nevy11-large-display></nevy11-large-display>
+</div>
