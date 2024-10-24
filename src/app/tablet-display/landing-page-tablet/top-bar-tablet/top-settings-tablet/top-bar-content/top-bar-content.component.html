@@ -1,0 +1,32 @@
+<cdk-accordion class="example-accordion">
+  @for (item of items; track item; let index = $index) {
+  <cdk-accordion-item
+    #accordionItem="cdkAccordionItem"
+    class="example-accordion-item"
+    role="button"
+    tabindex="0"
+    [attr.id]="'accordion-header-' + index"
+    [attr.aria-expanded]="accordionItem.expanded"
+    [attr.aria-controls]="'accordion-body-' + index"
+  >
+    <div
+      class="example-accordion-item-header"
+      (click)="accordionItem.toggle()"
+      [routerLink]="items_index[index]"
+    >
+      {{ item }}
+      <span class="example-accordion-item-description">
+        Click to {{ accordionItem.expanded ? "close" : "open" }} {{ item }}
+      </span>
+    </div>
+
+    <div>
+      @if (accordionItem.expanded) {
+      <div>
+        <router-outlet></router-outlet>
+      </div>
+      }
+    </div>
+  </cdk-accordion-item>
+  }
+</cdk-accordion>

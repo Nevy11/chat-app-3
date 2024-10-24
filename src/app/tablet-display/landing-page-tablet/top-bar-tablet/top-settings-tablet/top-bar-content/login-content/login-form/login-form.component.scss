@@ -1,0 +1,32 @@
+@use "@angular/material" as mat;
+
+@include mat.core();
+
+$my-theme: mat.define-theme(
+  (
+    color: (
+      theme-type: light,
+      primary: mat.$violet-palette,
+    ),
+  )
+);
+
+.email-form-field {
+  width: 100%;
+  @include mat.form-field-color($my-theme);
+}
+
+.email-form-field input {
+  padding: 10px;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .email-form-field {
+    width: 100%;
+  }
+}
+
+.button {
+  @include mat.button-color($my-theme);
+}

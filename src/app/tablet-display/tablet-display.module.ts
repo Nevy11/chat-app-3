@@ -39,6 +39,17 @@ import { Side1TabletComponent } from './landing-page-tablet/content-tablet/part-
 import { Side2TabletComponent } from './landing-page-tablet/content-tablet/part-d-tablet/side2-tablet/side2-tablet.component';
 import { EContentTabletComponent } from './landing-page-tablet/content-tablet/part-e-tablet/e-content-tablet/e-content-tablet.component';
 import { EVideoTabletComponent } from './landing-page-tablet/content-tablet/part-e-tablet/e-video-tablet/e-video-tablet.component';
+import { TopBarContentComponent } from './landing-page-tablet/top-bar-tablet/top-settings-tablet/top-bar-content/top-bar-content.component';
+import { HelpCenterContentComponent } from './landing-page-tablet/top-bar-tablet/top-settings-tablet/top-bar-content/help-center-content/help-center-content.component';
+import { LibraryContentComponent } from './landing-page-tablet/top-bar-tablet/top-settings-tablet/top-bar-content/library-content/library-content.component';
+import { LoginContentComponent } from './landing-page-tablet/top-bar-tablet/top-settings-tablet/top-bar-content/login-content/login-content.component';
+import { OfficialWebsiteContentComponent } from './landing-page-tablet/top-bar-tablet/top-settings-tablet/top-bar-content/official-website-content/official-website-content.component';
+import { SignUpContentComponent } from './landing-page-tablet/top-bar-tablet/top-settings-tablet/top-bar-content/sign-up-content/sign-up-content.component';
+import { LoginFormComponent } from './landing-page-tablet/top-bar-tablet/top-settings-tablet/top-bar-content/login-content/login-form/login-form.component';
+import { SignUpFormComponent } from './landing-page-tablet/top-bar-tablet/top-settings-tablet/top-bar-content/sign-up-content/sign-up-form/sign-up-form.component';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -76,6 +87,14 @@ import { EVideoTabletComponent } from './landing-page-tablet/content-tablet/part
     Side2TabletComponent,
     EContentTabletComponent,
     EVideoTabletComponent,
+    TopBarContentComponent,
+    HelpCenterContentComponent,
+    LibraryContentComponent,
+    LoginContentComponent,
+    OfficialWebsiteContentComponent,
+    SignUpContentComponent,
+    LoginFormComponent,
+    SignUpFormComponent,
   ],
   imports: [
     CommonModule,
@@ -86,6 +105,9 @@ import { EVideoTabletComponent } from './landing-page-tablet/content-tablet/part
     MatButtonModule,
     NgOptimizedImage,
     MatListModule,
+    MatInputModule,
+    MatFormFieldModule,
+    ReactiveFormsModule,
   ],
 })
 export class TabletDisplayModule {}
