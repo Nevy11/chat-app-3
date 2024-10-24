@@ -1,0 +1,46 @@
+@use "@angular/material" as mat;
+@include mat.core();
+$my-theme: mat.define-theme(
+  (
+    color: (
+      theme-type: light,
+      primary: mat.$violet-palette,
+    ),
+  )
+);
+
+.chat-container {
+  height: 500px;
+}
+
+.chat-window {
+  height: 80%;
+  overflow-y: auto;
+  //   background-color: white;
+  @include mat.all-component-colors($my-theme);
+}
+
+.chat-messages {
+  padding: 5px;
+}
+
+.message {
+  margin: 10px 0;
+}
+
+.user-message {
+  text-align: right;
+}
+
+.bot-message {
+  text-align: left;
+}
+
+.chat-input {
+  @include mat.form-field-color($my-theme);
+}
+
+.my-button {
+  @include mat.button-color($my-theme);
+  margin-left: 2.5rem;
+}

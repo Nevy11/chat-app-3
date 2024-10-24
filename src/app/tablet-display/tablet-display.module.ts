@@ -49,7 +49,12 @@ import { LoginFormComponent } from './landing-page-tablet/top-bar-tablet/top-set
 import { SignUpFormComponent } from './landing-page-tablet/top-bar-tablet/top-settings-tablet/top-bar-content/sign-up-content/sign-up-form/sign-up-form.component';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ChatWidgetComponent } from './landing-page-tablet/top-bar-tablet/top-settings-tablet/top-bar-content/official-website-content/chat-widget/chat-widget.component';
+import { MatCardModule } from '@angular/material/card';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSelectModule } from '@angular/material/select';
 
 @NgModule({
   declarations: [
@@ -95,6 +100,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     SignUpContentComponent,
     LoginFormComponent,
     SignUpFormComponent,
+    ChatWidgetComponent,
   ],
   imports: [
     CommonModule,
@@ -108,6 +114,11 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatInputModule,
     MatFormFieldModule,
     ReactiveFormsModule,
+    FormsModule,
+    MatExpansionModule,
+    MatCardModule,
+    MatPaginatorModule,
+    MatSelectModule,
   ],
 })
 export class TabletDisplayModule {}

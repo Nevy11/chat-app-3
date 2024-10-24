@@ -1,1 +1,59 @@
-<p>library-content works!</p>
+<div class="library-container">
+  <mat-card class="library-header">
+    <div class="mat-headline-large">Library</div>
+    <mat-form-field>
+      <mat-label>Search</mat-label>
+      <input
+        matInput
+        placeholder="Search by title, author, or keyword..."
+        [(ngModel)]="searchTerm"
+        (keyup)="searchLibrary()"
+      />
+    </mat-form-field>
+  </mat-card>
+
+  <div class="library-filters">
+    <mat-form-field>
+      <mat-label>Category</mat-label>
+      <mat-select
+        [(ngModel)]="selectedCategory"
+        (selectionChange)="filterByCategory()"
+      >
+        <mat-option *ngFor="let category of categories" [value]="category">{{
+          category
+        }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="library-filter">
+      <mat-label>Sort by</mat-label>
+      <mat-select [(ngModel)]="sortOption" (selectionChange)="sortLibrary()">
+        <mat-option value="date">Date</mat-option>
+        <mat-option value="title">Title</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+  <div class="library-list">
+    <mat-card *ngFor="let resource of filteredResources" class="library-item">
+      <mat-card-header>
+        <mat-card-title>{{ resource.title }}</mat-card-title>
+        <mat-card-subtitle
+          >{{ resource.author }} - {{ resource.date | date }}</mat-card-subtitle
+        >
+      </mat-card-header>
+      <mat-card-content>
+        <p>{{ resource.description }}</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-button class="my-button">View More</button>
+        <button mat-button class="my-button">Download</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+
+  <mat-paginator
+    [length]="totalItems"
+    (page)="paginate($event)"
+  ></mat-paginator>
+</div>

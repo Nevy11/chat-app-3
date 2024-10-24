@@ -1,0 +1,67 @@
+@use "@angular/material" as mat;
+@include mat.core();
+$my-theme: mat.define-theme(
+  (
+    color: (
+      theme-type: light,
+      primary: mat.$violet-palette,
+    ),
+  )
+);
+
+.library-container {
+  padding: 20px;
+}
+
+.library-header {
+  margin-bottom: 20px;
+  color: black;
+  //   @include mat.card-theme($my-theme);
+}
+
+// .library-search {
+//   width: 100%;
+//   @include mat.card-theme($my-theme);
+// }
+
+.library-filters {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.library-filter {
+  width: 45%;
+  @include mat.select-color($my-theme);
+}
+
+.library-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.library-item {
+  width: 30%;
+  margin: 10px;
+}
+
+mat-paginator {
+  margin-top: 20px;
+  @include mat.paginator-color($my-theme);
+}
+
+mat-form-field {
+  @include mat.form-field-color($my-theme);
+  @include mat.select-color($my-theme);
+}
+
+mat-card {
+  @include mat.card-color($my-theme);
+}
+
+// mat-button {
+//   @include mat.button-color($my-theme);
+// }
+.my-button {
+  @include mat.button-color($my-theme);
+}
