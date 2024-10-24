@@ -1,5 +1,4 @@
-import { Component, ViewContainerRef, inject } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'nevy11-top-settings-large',
@@ -8,14 +7,12 @@ import { Router } from '@angular/router';
 })
 export class TopSettingsLargeComponent {
   items = ['login', 'sign up', 'Official Website', 'Library', 'Help Center'];
-  content = ['login', 'signUp', 'official', 'library', 'help'];
+  items_index = [
+    'tablet/login',
+    'tablet/sign up',
+    'tablet/Official Website',
+    'tablet/Library',
+    'tablet/Help Center',
+  ];
   expandedIndex = 0;
-
-  to_login = true;
-  vcr = inject(ViewContainerRef);
-  constructor(private router: Router) {}
-  login() {
-    this.to_login = !this.to_login;
-    this.router.navigate(['phone', 'login']);
-  }
 }

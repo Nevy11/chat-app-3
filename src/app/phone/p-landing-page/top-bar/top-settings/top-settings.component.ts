@@ -8,14 +8,12 @@ import { Router } from '@angular/router';
 })
 export class TopSettingsComponent {
   items = ['login', 'sign up', 'Official Website', 'Library', 'Help Center'];
-  content = ['login', 'signUp', 'official', 'library', 'help'];
+  items_index = [
+    'tablet/login',
+    'tablet/sign up',
+    'tablet/Official Website',
+    'tablet/Library',
+    'tablet/Help Center',
+  ];
   expandedIndex = 0;
-
-  to_login = true;
-  vcr = inject(ViewContainerRef);
-  constructor(private router: Router) {}
-  login() {
-    this.to_login = !this.to_login;
-    this.router.navigate(['phone', 'login']);
-  }
 }
