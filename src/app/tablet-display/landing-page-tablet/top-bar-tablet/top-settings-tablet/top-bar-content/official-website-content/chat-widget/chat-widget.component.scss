@@ -16,7 +16,6 @@ $my-theme: mat.define-theme(
 .chat-window {
   height: 80%;
   overflow-y: auto;
-  //   background-color: white;
   @include mat.all-component-colors($my-theme);
 }
 
