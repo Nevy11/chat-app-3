@@ -1,0 +1,19 @@
+{
+  "routes": [
+    "/Help Center",
+    "/large",
+    "/Library",
+    "/login",
+    "/Official Website",
+    "/phone",
+    "/phone/login",
+    "/sign up",
+    "/tablet",
+    "/tablet/Help Center",
+    "/tablet/Library",
+    "/tablet/login",
+    "/tablet/Official Website",
+    "/tablet/sign up",
+    "/testing"
+  ]
+}

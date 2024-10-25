@@ -1,0 +1,113 @@
+{
+  "configVersion": 1,
+  "timestamp": 1729839639814,
+  "index": "/lcp-chat-app/index.csr.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/lcp-chat-app/chunk-2V5XNGUY.js",
+        "/lcp-chat-app/chunk-35U2NW5K.js",
+        "/lcp-chat-app/chunk-45BI26TF.js",
+        "/lcp-chat-app/chunk-CPVANQNU.js",
+        "/lcp-chat-app/chunk-EJU2PDXM.js",
+        "/lcp-chat-app/chunk-GFWI5ZVP.js",
+        "/lcp-chat-app/chunk-HHFTGCM7.js",
+        "/lcp-chat-app/chunk-HIEXVKEL.js",
+        "/lcp-chat-app/chunk-IX6G3U3V.js",
+        "/lcp-chat-app/chunk-LZJFDW4Z.js",
+        "/lcp-chat-app/chunk-OA3A4HRB.js",
+        "/lcp-chat-app/chunk-PN3AEVIA.js",
+        "/lcp-chat-app/chunk-RMDVE3LN.js",
+        "/lcp-chat-app/chunk-T6IGL6QQ.js",
+        "/lcp-chat-app/favicon.ico",
+        "/lcp-chat-app/main-GLJH33FG.js",
+        "/lcp-chat-app/manifest.webmanifest",
+        "/lcp-chat-app/polyfills-SCHOHYNV.js",
+        "/lcp-chat-app/styles-JRPLT2G2.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/lcp-chat-app/icons/icon-128x128.png",
+        "/lcp-chat-app/icons/icon-144x144.png",
+        "/lcp-chat-app/icons/icon-152x152.png",
+        "/lcp-chat-app/icons/icon-192x192.png",
+        "/lcp-chat-app/icons/icon-384x384.png",
+        "/lcp-chat-app/icons/icon-512x512.png",
+        "/lcp-chat-app/icons/icon-72x72.png",
+        "/lcp-chat-app/icons/icon-96x96.png",
+        "/lcp-chat-app/images/AIgrad.webp",
+        "/lcp-chat-app/images/brainAI.jpeg",
+        "/lcp-chat-app/images/gpt.webp",
+        "/lcp-chat-app/images/manyGrads.jpg"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/lcp-chat-app/chunk-2V5XNGUY.js": "e0cc87c795832262e2947f022e32c221ba56a519",
+    "/lcp-chat-app/chunk-35U2NW5K.js": "ad1a624224d532b7ab80a76f27b2fe014febcc0b",
+    "/lcp-chat-app/chunk-45BI26TF.js": "b51770b344fbed8d95775b9f9009a377012072eb",
+    "/lcp-chat-app/chunk-CPVANQNU.js": "aa5e10b55171b18110a61a2e08d2bcddbe8f135e",
+    "/lcp-chat-app/chunk-EJU2PDXM.js": "7c894f2928092b985104f9a7d00995b33a372df8",
+    "/lcp-chat-app/chunk-GFWI5ZVP.js": "b9b7692b0480005a84ed8896072135c3c6bd467b",
+    "/lcp-chat-app/chunk-HHFTGCM7.js": "325d31f7808362ffb438dcd8f65aacbe50a37cee",
+    "/lcp-chat-app/chunk-HIEXVKEL.js": "399e96aca1fcf143d2a568cb39b818872f8022f1",
+    "/lcp-chat-app/chunk-IX6G3U3V.js": "ab4d039448afb6c87dfb5eed1c7ea999f5a0cf7d",
+    "/lcp-chat-app/chunk-LZJFDW4Z.js": "37e3b17c26fce85ca0668c0451f76e82e43b34c6",
+    "/lcp-chat-app/chunk-OA3A4HRB.js": "eb7cebf8a77aa2037863b56ee0bd397b5671aeef",
+    "/lcp-chat-app/chunk-PN3AEVIA.js": "dc215f5d1b5c1a934f8833e2a516913e5e70b34a",
+    "/lcp-chat-app/chunk-RMDVE3LN.js": "1d365e2d77f94f6d4cd44bb15f57d92345c09d05",
+    "/lcp-chat-app/chunk-T6IGL6QQ.js": "2748c50075ca9fe1b495ca9e12f2ab0368ef8dc2",
+    "/lcp-chat-app/favicon.ico": "9c39f434fe1261f68c5e3eefdf734630d99c5670",
+    "/lcp-chat-app/icons/icon-128x128.png": "f912963bdc6d5a38d8f1dd0afbaab2ce8d657acb",
+    "/lcp-chat-app/icons/icon-144x144.png": "b155fd5f2fd5d2ea7760721063003c4cd95fd783",
+    "/lcp-chat-app/icons/icon-152x152.png": "eae6e0f0c8afb8aaae339e2a569b43e9238e5e6c",
+    "/lcp-chat-app/icons/icon-192x192.png": "15c4180454633880d98674aa7394656196c91584",
+    "/lcp-chat-app/icons/icon-384x384.png": "94a915751ef6c9282df9aea405ad679230631814",
+    "/lcp-chat-app/icons/icon-512x512.png": "1de182f76f7329dfa8f9fcdd1fdcdd695bea6a99",
+    "/lcp-chat-app/icons/icon-72x72.png": "aa88a6096bd973be7f6d7a5489bfa6bc2463f8c4",
+    "/lcp-chat-app/icons/icon-96x96.png": "7fb8f59c30ce2ff12c700321a0b39e14b3dc8f95",
+    "/lcp-chat-app/images/AIgrad.webp": "ccdd596d2091bcff4dab97b27c1b3bdcfa09a2fd",
+    "/lcp-chat-app/images/brainAI.jpeg": "d3da92612109543c18cbba81e57895bd84453377",
+    "/lcp-chat-app/images/gpt.webp": "50247cfe5cd8bd2e3f6667269ec8b3895c7b8e32",
+    "/lcp-chat-app/images/manyGrads.jpg": "939ff9e83036cd30aa80affc780ba51d7f793e37",
+    "/lcp-chat-app/main-GLJH33FG.js": "f9ee8be52eeb7cd551ce04a2cd59b122919535fd",
+    "/lcp-chat-app/manifest.webmanifest": "49f5f9c77f5b4670d3cc8f4eeb327967057aa767",
+    "/lcp-chat-app/polyfills-SCHOHYNV.js": "d45c76c5960bab3ace7fd6d211b9579456241f8a",
+    "/lcp-chat-app/styles-JRPLT2G2.css": "a7fda05dbd6c3acb2a60da1a95b9e68cc8c87c52"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
